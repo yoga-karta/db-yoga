@@ -23,3 +23,6 @@ MariaDB [(none)]> SHOW DATABASES;
 +--------------------+
 5 rows in set (0.002 sec)
 
+root@yogaserver2:~# mysqldump -u yogakarta -p bantuan > /home/yogakarta/backup-BantuanUINSK.sql
+Enter password:
+
