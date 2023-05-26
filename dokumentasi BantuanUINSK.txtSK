@@ -26,3 +26,5 @@ MariaDB [(none)]> SHOW DATABASES;
 root@yogaserver2:~# mysqldump -u yogakarta -p bantuan > /home/yogakarta/backup-BantuanUINSK.sql
 Enter password:
 
+
+
