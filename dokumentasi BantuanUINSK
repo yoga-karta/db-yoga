@@ -1,6 +1,6 @@
-#dokumentasi di Server Ubuntu 
+#dokumentasi bantuan uinsk di Server Ubuntu 
 
-MariaDB [(none)]> CREATE USER 'yogakarta'@'localhost' IDENTIFIED BY 'Yoga230499*';
+MariaDB [(none)]> CREATE USER 'yogakarta'@'localhost' IDENTIFIED BY '******';
 Query OK, 0 rows affected (0.122 sec)
 
 MariaDB [(none)]> GRANT ALL PRIVILEGES ON * . * TO 'yogakarta'@'localhost';
@@ -11,4 +11,15 @@ Query OK, 0 rows affected (0.060 sec)
 
 MariaDB [(none)]> Ctrl-C -- exit!
 
+MariaDB [(none)]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| bantuan            |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.002 sec)
 
