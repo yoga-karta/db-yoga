@@ -1,12 +1,21 @@
+#!/bin/bash
 #penambahan directory
-
 DATE=$(date +%d-%m-%Y)
-BACKUP_DIR="/home/yogakarta/BantuanUINSK-Utama"
-MYSQL_USER="root"
+MYSQL_USER="yogakarta"
 MYSQL_PASSWORD="Yoga230499*"
-MYSQL="$ mariadb"
-DB="bantuan"
-echo $DB
-mysqldump -u root -p$Yoga230499* $DB | gzip -9 > "$/home/yogakarta/BantuanUINSK-Utama/bantuan-$DATE.sql.gz"
-find $/home/yogakarta/BantuanUINSK-Utama/* -mtime +5 -exec rm {} \;
+MYSQL_DATABASE="DATABASES"
+
+#nama file backup dan tanggal hari ini
+DATE=$(date +%d-%m-%Y)
+MYSQL_BACKUP_FILENAME=Cadangan_BantuanUINSK_$DATE.sql
+
+mysqldump --all-databases -u yogakarta  -p Yoga230499* bantuan > Cadangan_BantuanUINSK_$DATE.sql
+
+#file tersimpan di
+MYSQL_BACKUP_DIR="$home/yogakarta/BantuanUINSK-Utama"
+mv $MYSQL_BACKUP_FILENAME $MYSQL_BACKUP_DIR
+
+#Notif
+echo "Backup databases selesai"
+
 
