@@ -50,6 +50,6 @@ if command -v psql &> /dev/null; then
     exit 0
 fi
 
-echo "Tidak ada MySQL atau PostgreSQL terdeteksi."
-echo "Proses backup database selesai."
+echo "Tidak ada MySQL atau PostgreSQL yang terdeteksi."
+echo "Proses backup database tidak berjalan."
 exit 1
